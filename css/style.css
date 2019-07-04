@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, button {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+body main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  background-color: coral;
+}
+
+body main .grid-component {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "grid-description grid-description" "grid-sign-up grid-why-us";
+  max-width: 700px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+}
+
+body main .grid-component .description {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: grid-description;
+  padding: 50px;
+}
+
+body main .grid-component .description h1 {
+  font-size: 30px;
+  color: #2ab2af;
+  margin-bottom: 30px;
+}
+
+body main .grid-component .description h3 {
+  color: #c0df34;
+  margin-bottom: 15px;
+}
+
+body main .grid-component .description p {
+  font-weight: 700;
+  line-height: 1.7;
+  color: #98a6bd;
+}
+
+body main .grid-component .sign-up {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: grid-sign-up;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2ab2af;
+  padding: 50px;
+  color: white;
+}
+
+body main .grid-component .sign-up > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body main .grid-component .sign-up h3 {
+  margin-bottom: 20px;
+}
+
+body main .grid-component .sign-up .price {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .grid-component .sign-up .price span {
+  font-size: 35px;
+  font-weight: 700;
+  padding-right: 10px;
+}
+
+body main .grid-component .sign-up .price p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #e5eff5;
+}
+
+body main .grid-component .sign-up > p {
+  margin-bottom: 30px;
+}
+
+body main .grid-component .sign-up button {
+  padding: 15px;
+  background-color: #c0df34;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+body main .grid-component .sign-up button:hover {
+  background-color: #FFD300;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+body main .grid-component .why-us {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: grid-why-us;
+  background-color: #30cfcc;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+body main .grid-component .why-us > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body main .grid-component .why-us h3 {
+  margin-bottom: 20px;
+}
+
+body main .grid-component .why-us p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
