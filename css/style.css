@@ -5,8 +5,9 @@
           box-sizing: border-box;
 }
 
-html, button {
-  font-family: 'Karla', sans-serif;
+html,
+button {
+  font-family: "Karla", sans-serif;
   font-size: 16px;
 }
 
@@ -136,18 +137,19 @@ body main .grid-component .sign-up button {
   background-color: #c0df34;
   color: white;
   font-weight: 700;
+  cursor: pointer;
   border: none;
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 body main .grid-component .sign-up button:hover {
-  background-color: #FFD300;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  background-color: #ffd300;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 body main .grid-component .why-us {
@@ -188,5 +190,13 @@ body main .grid-component .why-us p {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media (max-width: 640px) {
+  body main .grid-component {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+        grid-template-areas: "grid-description" "grid-sign-up" "grid-why-us";
+  }
 }
 /*# sourceMappingURL=style.css.map */
